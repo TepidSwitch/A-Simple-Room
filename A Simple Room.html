@@ -11,14 +11,16 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="A Simple Room" startnode="1" creator="Twine" creator-version="2.2.1" ifid="38C992F1-F213-46D7-8D79-17319617DF19" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+<tw-storydata name="A Simple Room" startnode="1" creator="Twine" creator-version="2.2.1" ifid="38C992F1-F213-46D7-8D79-17319617DF19" zoom="0.25" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 
 
 
 
 
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="A Simple Room" tags="Start" position="400,98" size="100,100">{(if:$boats is true)[
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="A Simple Room" tags="Start" position="400,98" size="100,100">{(if:$boats is true)[
 You are in a simple room. There&#39;s a well used sofa facing a television. The room wants you to leave.]
 (else:)[(set: $boats to false, $watch to false)A simple room.
 It wants you to leave.]}
@@ -34,7 +36,7 @@ It wants you to leave.]}
 
 [[Take a closer look at the tree-&gt;Tree, Closer]]
 [[Follow the path-&gt;Bench]]
-[[Go back to the room-&gt;A Simple Room]]]</tw-passagedata><tw-passagedata pid="3" name="Tree, Closer" tags="" position="203,395" size="100,100">(if: $boats is false)[The three has some red leaves. It&#39;s the central feature of the town center. 
+[[Go back to the room-&gt;A Simple Room]]]</tw-passagedata><tw-passagedata pid="3" name="Tree, Closer" tags="" position="203,395" size="100,100">(if: $boats is false)[The tree has some red leaves. It&#39;s the central feature of the town center. 
 
 [[Take the path-&gt;Bench]] 
 [[Go back to the room-&gt;A Simple Room]]]
@@ -47,7 +49,7 @@ It&#39;s pleasant here.
 He waves at you.
 
 [[Take a seat-&gt;Fisherman]]
-[[Go back to the three-&gt;Tree]] 
+[[Go back to the tree-&gt;Tree]] 
 [[Go back to the room-&gt;A Simple Room]]]
 (else:)[There&#39;s a bench by the lake. The old man isn&#39;t here.
 
